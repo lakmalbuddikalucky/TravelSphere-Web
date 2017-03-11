@@ -1,7 +1,7 @@
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
-    var noop = function () {};
+    var noop = function() {};
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -29,17 +29,17 @@
 $('.countdown').downCount({
     date: '06/10/2016 12:00:00',
     offset: +10
-}, function () {
-    alert('WOOT WOOT, done!');
+}, function() {
+
 });
-     
+
 
 // -------------------------------------------------------------
 // Google Map Customization
 // -------------------------------------------------------------
 
-jQuery(function ($) {
-    
+jQuery(function($) {
+
     'use strict';
 
     var map;
@@ -48,11 +48,11 @@ jQuery(function ($) {
         el: '#map-wrapper',
         lat: 23.475719,
         lng: 91.137101,
-        scrollwheel:false,
+        scrollwheel: false,
         zoom: 16,
-        zoomControl : true,
-        panControl : true,
-        streetViewControl : true,
+        zoomControl: true,
+        panControl: true,
+        streetViewControl: true,
         mapTypeControl: false,
         overviewMapControl: false,
         clickable: true
@@ -70,48 +70,48 @@ jQuery(function ($) {
     });
 
 
-    var styles = [ 
+    var styles = [
 
-    {
-        "featureType": "road",
-        "stylers": [
-        { "color": "#ffffff" }
-        ]
-    },{
-        "featureType": "water",
-        "stylers": [
-        { "color": "#99b3cc" }
-        ]
-    },{
-        "featureType": "landscape",
-        "stylers": [
-        { "color": "#f2efe9" }
-        ]
-    },{
-        "elementType": "labels.text.fill",
-        "stylers": [
-        { "color": "#d3cfcf" }
-        ]
-    },{
-        "featureType": "poi",
-        "stylers": [
-        { "color": "#bfbfbf" }
-        ]
-    },{
-        "elementType": "labels.text",
-        "stylers": [
-        { "saturation": 1 },
-        { "weight": 0.1 },
-        { "color": "#000000" }
-        ]
-    }
+        {
+            "featureType": "road",
+            "stylers": [
+                { "color": "#ffffff" }
+            ]
+        }, {
+            "featureType": "water",
+            "stylers": [
+                { "color": "#99b3cc" }
+            ]
+        }, {
+            "featureType": "landscape",
+            "stylers": [
+                { "color": "#f2efe9" }
+            ]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [
+                { "color": "#d3cfcf" }
+            ]
+        }, {
+            "featureType": "poi",
+            "stylers": [
+                { "color": "#bfbfbf" }
+            ]
+        }, {
+            "elementType": "labels.text",
+            "stylers": [
+                { "saturation": 1 },
+                { "weight": 0.1 },
+                { "color": "#000000" }
+            ]
+        }
 
     ];
 
     map.addStyle({
-        styledMapName:"Styled Map",
+        styledMapName: "Styled Map",
         styles: styles,
-        mapTypeId: "map_style"  
+        mapTypeId: "map_style"
     });
 
     map.setStyle("map_style");
@@ -120,7 +120,7 @@ jQuery(function ($) {
 /**
  * MAILCHIMP
  */
-$('#mc-form').ajaxChimp({ 
-    url: 'http://doelit.us10.list-manage.com/subscribe/post?u=b02e4f21e264536eff4820875&amp;id=4d57faf2cb' 
-    /* Replace Your AjaxChimp Subscription Link */
+$('#mc-form').ajaxChimp({
+    url: 'http://doelit.us10.list-manage.com/subscribe/post?u=b02e4f21e264536eff4820875&amp;id=4d57faf2cb'
+        /* Replace Your AjaxChimp Subscription Link */
 });
